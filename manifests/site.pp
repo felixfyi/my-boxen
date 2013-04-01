@@ -68,7 +68,7 @@ node default {
   include caffeine
   include gitx
   #include zsh
-  #include skype
+  include skype
   include spotify
   include onepassword
   include virtualbox
