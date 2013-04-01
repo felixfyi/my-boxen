@@ -76,7 +76,7 @@ node default {
   include postgresapp
   include induction
   include tunnelblick
-  include evernote
+  #include evernote
 
   # node versions
   include nodejs::0-4
