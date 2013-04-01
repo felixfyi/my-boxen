@@ -53,13 +53,30 @@ node default {
   include dnsmasq
   include git
   include hub
-  include nginx
+  #include nginx
   include nvm
 
   # fail if FDE is not enabled
   if $::root_encrypted == 'no' {
     fail('Please enable full disk encryption and try again')
   }
+  
+  # Custom tools
+  include iterm2::dev
+  include dropbox
+  include chrome
+  include caffeine
+  include gitx
+  #include zsh
+  #include skype
+  include spotify
+  include onepassword
+  include virtualbox
+  include vagrant
+  include postgresapp
+  include induction
+  include tunnelblick
+  include evernote
 
   # node versions
   include nodejs::0-4
@@ -77,7 +94,9 @@ node default {
     [
       'ack',
       'findutils',
-      'gnu-tar'
+      'gnu-tar',
+#      'iftop',
+#      'htop',
     ]:
   }
 
