@@ -72,6 +72,7 @@ node default {
   include spotify
   include onepassword
   include virtualbox
+  include sublime_text_2
   include vagrant
   include postgresapp
   include induction
